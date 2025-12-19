@@ -1,1 +1,11 @@
 /target
+/_posts
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+*.json
+vendor
+.DS_Store
+*.swp
+Gemfile.lock

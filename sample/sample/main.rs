@@ -54,6 +54,7 @@ async fn process_rust_file(rs_path: &Path) -> io::Result<()> {
             rust_source
         );
 
+        println!("{}", &prompt);
         let description = request_ollama(&prompt, None).await;
         write_file(&description_md_path, &description)?;
         post_content.push_str(&description);
@@ -115,7 +116,6 @@ fn prompt_to_describe_codes() -> String {
 - In detail.
 - Just the answer.
 - dont use code block
-- プログラムの動作だけではなく、rustの書き方・技術についても記載して
 - Start your response with 'このRustプログラムは'.
 "#
     .to_string()
