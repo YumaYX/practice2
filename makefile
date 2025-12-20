@@ -19,3 +19,7 @@ port:
 
 clean:
 	rm -rf _posts/* _site
+
+pub2: clean
+	cargo run
+	make pub
