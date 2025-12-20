@@ -2,6 +2,8 @@
 layout: default
 ---
 
+Rustの練習、メモ、tips
+
 # Articles
 
 {% assign sorted_site_categories = site.categories | sort %}
@@ -18,3 +20,9 @@ layout: default
 </ul>
 
 {% endfor %}
+
+### Reference
+
+- [Rustプログラミング言語](https://rust-lang.org/ja/)
+- [std - Rust](https://doc.rust-lang.org/stable/std/index.html)
+- [Rust by Example](https://doc.rust-jp.rs/rust-by-example-ja/)
