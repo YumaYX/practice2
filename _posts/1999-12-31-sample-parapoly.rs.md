@@ -19,4 +19,5 @@ fn print_len<T: AsRef<str>>(s: T) {
 fn main () {
     print_len("hello");
     print_len(String::from("world"));
-}```
+}
+```
