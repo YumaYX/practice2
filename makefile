@@ -20,6 +20,9 @@ port:
 clean:
 	rm -rf _posts/* _site
 
+reset: clean
+	rm -fv sample/*/*.md _posts/*
+
 pub2: clean
 	cargo run
 	make pub

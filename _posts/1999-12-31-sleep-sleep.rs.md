@@ -15,4 +15,5 @@ Rustの`thread::sleep`関数は、他のスレッドが実行されるのを待�
 ```rust
 thread::sleep(Duration::from_secs(2));
 
+
 ```

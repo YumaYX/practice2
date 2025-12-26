@@ -62,7 +62,7 @@ async fn process_rust_file(rs_path: &Path) -> io::Result<()> {
     // Rust コードブロック追加
     post_content.push_str("\n\n```rust\n");
     post_content.push_str(&rust_source);
-    post_content.push_str("```\n");
+    post_content.push_str("\n```\n");
 
     // Jekyll post 出力
     let output_path = build_post_path(&category, &file_name);

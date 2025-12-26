@@ -82,4 +82,5 @@ fn main () {
     notify(&blog_post);
 }
 
+
 ```
