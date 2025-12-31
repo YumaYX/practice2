@@ -64,4 +64,3 @@ fn main () {
     notify(&tweet);
     notify(&blog_post);
 }
-

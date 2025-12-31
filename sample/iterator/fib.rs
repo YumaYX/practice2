@@ -23,4 +23,3 @@ fn main() {
     let x = fib_iter().nth(50).unwrap();
     println!("{}", x);
 }
-

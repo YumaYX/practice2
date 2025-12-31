@@ -35,4 +35,3 @@ fn main() {
         println!("file del - success");
     }
 }
-
