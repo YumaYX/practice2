@@ -6,7 +6,7 @@ use ollama_rs::generation::completion::GenerationResponse;
 // GenerationResponse を返す関数
 async fn request_ollama_raw(prompt: &str, model: Option<&str>) -> Result<GenerationResponse, OllamaError> {
     let ollama = Ollama::default();
-    let model = model.unwrap_or("rnj-1:latest");
+    let model = model.unwrap_or("gemma3:latest");
     ollama.generate(GenerationRequest::new(model.to_string(), prompt)).await
 }
 
